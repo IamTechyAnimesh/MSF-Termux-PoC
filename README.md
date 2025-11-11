@@ -1,4 +1,4 @@
-# Metasploit-Termux-Installer
+# MSF in Termux
 
 > Installer script for Metasploit Framework on Termux (no root required).
 
@@ -20,12 +20,14 @@ This repository contains a bash installer that automates downloading and install
 
 ## Quick install (example)
 
-1. Save the installer script as `install_msf.sh` in Termux.
+1. Save the installer script as `msf-install.sh` in Termux.
 2. Make it executable and run it:
 
 ```bash
+pkg update -y && pkg upgrade -y
+pkg install ruby clang make libxml2 libxslt libiconv -y
 pkg install wget -y
-
+wget https://raw.githubusercontent.com/IamTechyAnimesh/msf-termux/refs/heads/main/msf-install.sh
 chmod +x msf-install.sh
 ./msf-install.sh
 ```
