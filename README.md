@@ -1,4 +1,4 @@
-# MSF in Termux
+# MSF in Termux PoC
 > Installer script for **Metasploit Framework** on Termux (no root required).
 
 A small helper/POC repo that documents a reproducible installer flow for running Metasploit Framework inside a proot-based Linux distribution on Termux.
