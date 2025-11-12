@@ -62,6 +62,15 @@ Use Metasploit only on systems you own or where you have explicit, written permi
 ```bash
 msfconsole
 ```
+## User Guide :
+1. Login to proot-distro :
+    ```bash
+    proot-distro login ubuntu
+    ```
+2. Run Metasploit :
+   ```bash
+   msfconsole
+   ``` 
 ---
 
 ## Security & ethics
