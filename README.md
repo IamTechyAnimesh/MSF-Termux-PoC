@@ -40,19 +40,23 @@ Use Metasploit only on systems you own or where you have explicit, written permi
     ```bash
    proot-distro login ubuntu
     ```
-6. Install required packages :
+6. Uptate and Upgrade :
+    ```bash
+   apt update ; apt upgrade 
+   ```
+7. Install required packages :
    ```bash
    apt install -y curl wget git
    ```
-7. Download the Metasploit installer script :
+8. Download the Metasploit installer script :
    ```bash
    curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msf-termux
    ```
-8. Make the script executable
+9. Make the script executable
    ```bash
     chmod +x msf-termux
     ```
-9. Run the installer script
+10. Run the installer script
     ```bash
     ./msf-termux
     ```
